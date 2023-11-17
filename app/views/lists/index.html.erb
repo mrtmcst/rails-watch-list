@@ -1,0 +1,16 @@
+<h1>All lists</h1>
+
+<br>
+
+<div class="lists">
+  <% @lists.each do |list| %>
+    <%= render list %>
+    <%= link_to 'Show this list', list%>
+  <% end %>
+
+  <br>
+
+  <p>
+    <%= link_to 'Create list', new_list_path%>
+  </p>
+</div>
